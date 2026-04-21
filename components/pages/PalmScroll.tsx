@@ -6,36 +6,38 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { GiCook, GiHealthNormal } from "react-icons/gi";
 import { MdEco, MdVerifiedUser, MdOutlineHighQuality } from "react-icons/md";
 import Image from "next/image";
-
+import { HiOutlineShieldCheck, HiOutlineTruck } from "react-icons/hi";
+import { GiWeightScale, GiCrestedHelmet, GiCheckMark } from "react-icons/gi";
+import { MdOutlineVerified } from "react-icons/md";
 gsap.registerPlugin(ScrollTrigger);
 
 const benefitsData = [
     {
-        id: "eco",
-        title: "Eco-Conscious Harvesting",
-        description: "Our palm oil is more than just a commodity; it's a commitment. By utilizing RSPO-certified sustainable practices, we protect the rainforests and provide a habitat for wildlife to thrive.",
+        id: "purity",
+        title: "Certified Purity & Safety",
+        description: "Every batch of Ama Organics undergoes rigorous quality checks. Our palm oil is 100% unadulterated and cold-pressed to ensure it meets international food safety standards for your family's peace of mind.",
         mediaType: "image",
-        mediaUrl: "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGVhdmVzfGVufDB8fDB8fHww",
-        icon: <MdEco />,
-        tag: "Sustainability"
+        mediaUrl: "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=600&auto=format&fit=crop&q=60",
+        icon: <HiOutlineShieldCheck />,
+        tag: "Safety First"
     },
     {
-        id: "culinary",
-        title: "Superior Culinary Texture",
-        description: "Renowned by world-class chefs for its incredible stability. With a high smoke point of 232°C, it’s perfect for frying, creating the ultimate smooth texture in baked goods.",
+        id: "logistics",
+        title: "Transparent Supply Chain",
+        description: "We bridge the gap between the farm and your table. With real-time tracking and nationwide delivery, we ensure our organic staples arrive fresh, grit-free, and exactly when you need them.",
         mediaType: "video",
-        mediaUrl: "/videos/cook.mp4",
-        icon: <GiCook />,
-        tag: "Chef Grade"
+        mediaUrl: "/videos/plants.mp4",
+        icon: <HiOutlineTruck />,
+        tag: "Global Standards"
     },
     {
-        id: "health",
-        title: "Antioxidant Rich Vitality",
-        description: "Fuel your body with a natural source of Vitamin E and Carotenoids. Our cold-pressed process preserves vital nutrients, supporting cardiovascular health and energy.",
+        id: "nutrition",
+        title: "Nutrient-Dense Heritage",
+        description: "Our hardwood-smoking and traditional extraction methods preserve the high Vitamin A and E content naturally found in Ghanaian palm fruit, fueling your body with antioxidant-rich vitality.",
         mediaType: "image",
         mediaUrl: "/images/fruit.jpeg",
-        icon: <GiHealthNormal />,
-        tag: "Clean Label"
+        icon: <MdOutlineVerified />,
+        tag: "100% Organic"
     }
 ];
 

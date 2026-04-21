@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ChevronPattern: React.FC<{ className?: string }> = ({ className }) => (
     <svg viewBox="0 0 100 20" preserveAspectRatio="none" className={className} aria-hidden="true">
@@ -78,10 +79,12 @@ const CTASection: React.FC = () => {
                         </p>
 
                         <div className="flex flex-wrap gap-4 items-center">
-                            <Button className="bg-black hover:bg-zinc-800 text-white px-10 py-7 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all shadow-lg shadow-gray-200">
-                                Order Now
-                            </Button>
-                            <span className="text-[10px] font-bold text-gray-300 uppercase tracking-widest px-4">
+                            <Link href={"/contact"}>
+                                <Button className="bg-black hover:bg-zinc-800 text-white px-10 py-6 rounded-2xl text-xs font-bold uppercase tracking-widest transition-all shadow-lg shadow-gray-200">
+                                    Order Now
+                                </Button>
+                            </Link>
+                            <span className="text-[10px] font-bold text-gray-600 uppercase tracking-widest px-4">
                                 Fast Delivery • Ghana
                             </span>
                         </div>

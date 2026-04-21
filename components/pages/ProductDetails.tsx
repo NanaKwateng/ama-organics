@@ -105,7 +105,7 @@ export default function FoodVarietyDetailPage() {
 
     return (
         <div className="min-h-screen bg-white text-zinc-900 font-sans antialiased">
-            <header className="py-8 px-6 md:px-20 border-b flex justify-between items-center sticky top-0 bg-white/80 backdrop-blur-md z-50">
+            <header className="py-3 px-6 md:px-20 flex justify-between items-center sticky top-0 bg-white/80 backdrop-blur-md z-50">
                 <div className="flex items-center gap-4">
                     <Button
                         variant="ghost"
@@ -131,12 +131,15 @@ export default function FoodVarietyDetailPage() {
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 1.05 }}
-                                className="relative aspect-square rounded-[3rem] overflow-hidden bg-zinc-50 border border-zinc-100 flex items-center justify-center p-12"
+                                className="relative aspect-square rounded-[3rem] overflow-hidden bg-zinc-50 border border-zinc-100 flex items-center justify-center p-12 rounded-2xl"
                             >
-                                <img
+                                <Image
                                     src={activeItem.image}
                                     alt={activeItem.name}
-                                    className="w-full h-full object-contain mix-blend-multiply"
+                                    className="w-full h-full object-contain mix-blend-multiply absolute insert-0"
+                                    fill
+                                    preload
+
                                 />
                             </motion.div>
                         </AnimatePresence>

@@ -9,6 +9,9 @@ import {
     useAnimationFrame,
     useMotionValue, // Added this
 } from "framer-motion";
+import { Button } from "../ui/button";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 interface MarqueeProps {
     images: string[];
@@ -98,7 +101,7 @@ export default function ZigzagMarquee() {
 
     const bottomImages = [
         "/images/maize.jpeg",
-        "/imagey/smokeFish.png",
+        "/images/smokeFish.png",
         "/images/foods.jpeg",
         "/images/cassava.jpeg",
         "/images/spices.jpeg",
@@ -121,14 +124,20 @@ export default function ZigzagMarquee() {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-4xl md:text-7xl font-black text-white tracking-tighter leading-[0.9] mb-8">
-                        A tradition <br />
-                        <span className="text-orange-600">deeply rooted</span> <br />
-                        in every soul.
+                        Get more of<br />
+                        <span className="text-orange-600">fresh foods </span> <br />
+                        from Ama Organics
                     </h2>
-                    <p className="text-[#86868b] text-lg md:text-2xl font-medium max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-[#86868b] text-md md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
                         From the sun-drenched groves of West Africa to your daily ritual,
                         we preserve the artisanal methods that have defined purity for generations.
                     </p>
+
+                    <Link href={"/products"}>
+                        <Button className="mt-5 bg-white text-black/90 py-2">
+                            Explore Market <ArrowRight size={40} color="black" className="ml-2" />
+                        </Button>
+                    </Link>
                 </motion.div>
             </div>
 

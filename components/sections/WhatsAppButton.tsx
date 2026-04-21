@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MdWhatsapp } from "react-icons/md";
 
 export default function WhatsAppButton() {
-    const phone = "233XXXXXXXXX"; // replace with your number
+    const phone = "233538616763"; // replace with your number
     const message = encodeURIComponent(
         "Hello Ama Organics, I would like to order your premium palm oil."
     );

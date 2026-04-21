@@ -1,11 +1,15 @@
-import CreativeSlider from "@/components/pages/ProductSlider";
-import HeroSection from "@/components/pages/Hero";
+
 import LandingPage from "@/components/pages/LandingPage";
 import PalmCarousel from "@/components/pages/PalmCarousel";
 import VideoRiseSection from "@/components/pages/VideoRiseSection";
 import ZigzagMarquee from "@/components/pages/ZigzagMarquee";
 import PalmScroll from "@/components/pages/PalmScroll";
-import OrganicSlider from "@/components/pages/OrganicSlider";
+import LusionSection from "@/components/pages/ScrollFiish";
+import LusionExperience from "@/components/pages/Lusion-experience";
+import ProductCard from "@/components/pages/ProductCard";
+import About from "@/components/pages/About";
+import Contact from "@/components/pages/contact";
+import AmaProductShowcase from "@/components/pages/Products";
 
 
 export default function Home() {
@@ -14,19 +18,16 @@ export default function Home() {
       <LandingPage />
       <PalmCarousel />
       <div className="bg-black">
-        <h2 className="text-5xl text-white p-8 max-w-2xl">
-          Experience the pure, natural taste of palm oil,authentic flavor of 100% organic palm oil
+        <h2 className="text-3xl md:text-5xl text-white p-8 max-w-2xl">
+          Experience the pure, natural taste of palm oil,authentic flavor - 100% organic palm oil
         </h2>
         <VideoRiseSection />
       </div>
+      <LusionExperience />
+      <ProductCard />
+
       <PalmScroll />
       <ZigzagMarquee />
-      <div className="">
-        <h2 className="text-6xl py-12 px-5 max-w-3xl">
-          Experience more of what Ama Organics has to offer.
-        </h2>
-        <OrganicSlider />
-      </div>
     </div>
   );
 }

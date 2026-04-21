@@ -162,12 +162,8 @@ export default function PalmCarousel() {
 
                 <div className="flex justify-between items-end mb-14">
                     <h2 className="text-4xl md:text-6xl font-bold tracking-tight font-sora">
-                        Get the highlights.
+                        What's inside?
                     </h2>
-                    <button className="text-[#2997ff] hover:underline text-xl font-medium flex items-center gap-2 group font-sora">
-                        View story
-                        <ArrowUpRight size={16} className="fill-current group-hover:scale-110 transition-transform" />
-                    </button>
                 </div>
 
                 <div className="relative">

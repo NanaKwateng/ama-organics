@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -94,23 +95,15 @@ export default function Hero() {
                     </p>
 
                     <div className="fade-in-ui mt-8 flex items-center gap-4">
-                        <Button className="bg-orange-900 text-white px-8 py-4 text-[10px] font-bold tracking-widest uppercase hover:bg-orange-800 transition shadow-xl shadow-orange-900/10">
-                            Order Now
-                        </Button>
+                        <Link href={"/contact"}>
+                            <Button className="bg-orange-900 text-white px-8 py-4 text-[10px] font-bold tracking-widest uppercase hover:bg-orange-800 transition shadow-xl shadow-orange-900/10">
+                                Order Now
+                            </Button>
+                        </Link>
                         <p className="text-[10px] text-gray-800 font-medium leading-tight">
                             Nationwide delivery <br /> across Ghana
                         </p>
                     </div>
-                </div>
-
-                {/* TOP RIGHT BRANDING */}
-                <div className="hidden lg:block absolute top-12 md:top-16 right-8 md:right-16 z-30 text-right fade-out-scroll">
-                    <p className="fade-in-ui text-3xl font-serif italic font-light tracking-tight text-orange-950">
-                        Ama Organics
-                    </p>
-                    <p className="fade-in-ui text-[10px] text-gray-400 mt-1 uppercase tracking-widest font-bold">
-                        Purely Natural
-                    </p>
                 </div>
 
                 {/* CENTER IMAGES (BOTTLE & PALM) */}
@@ -120,7 +113,7 @@ export default function Hero() {
                         {/* Main Bottle */}
                         <div ref={bottleRef} className="relative w-[280px] h-[500px] md:w-[340px] md:h-[580px] -rotate-6 transition-transform duration-300">
                             <Image
-                                src="/images/bottle.png"
+                                src="/images/product.png"
                                 alt="Ama Organics Bottle"
                                 fill
                                 priority
@@ -149,7 +142,7 @@ export default function Hero() {
                         <div className="absolute inset-0 border-t-2 border-orange-800 rounded-full animate-[spin_8s_linear_infinite]" />
                         <div className="text-center">
                             <p className="text-3xl md:text-4xl font-black">
-                                500<span className="text-sm ml-1">ml</span>
+                                3.3<span className="text-sm ml-1">L</span>
                             </p>
                             <p className="text-[9px] uppercase font-bold tracking-widest text-gray-500">
                                 Premium
