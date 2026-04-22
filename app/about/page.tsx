@@ -1,6 +1,17 @@
 import About from "@/components/pages/About";
 import LusionSection from "@/components/pages/ScrollFiish";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About Us",
+    description:
+        "Learn about Ama Organics — our story, mission, and commitment to pure, organic Ghanaian food. Supporting local farmers since day one.",
+    alternates: {
+        canonical: "https://www.amaorganics.com/about",
+    },
+};
+
 
 export default function AboutPage() {
     return (

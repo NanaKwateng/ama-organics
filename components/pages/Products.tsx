@@ -96,7 +96,7 @@ export default function AmaProductShowcase() {
             <div className="max-w-7xl mx-auto mb-20 space-y-12">
                 <div className="header-element space-y-4">
                     <h2 className="text-5xl md:text-7xl font-medium tracking-tighter text-black">Our Harvest</h2>
-                    <p className="text-zinc-400 max-w-md font-light">Sourced directly from Ghanaian soil to your kitchen. Quality you can taste, purity you can trust.</p>
+                    <p className="text-zinc-600 max-w-md font-light">Sourced directly from Ghanaian soil to your kitchen. Quality you can taste, purity you can trust.</p>
                 </div>
 
                 <nav className="header-element flex flex-wrap gap-3 border-b border-zinc-100 pb-8">

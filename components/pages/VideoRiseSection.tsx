@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { CgArrowTopRight } from "react-icons/cg";
 import { Button } from "../ui/button";
+import VideoWithFallback from "../ui/VideoWithFallback";
 
 export default function VideoRiseSection() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -34,7 +35,12 @@ export default function VideoRiseSection() {
 
                 {/* --- Background Media --- */}
                 <motion.div style={{ opacity: videoOpacity }} className="absolute inset-0 z-0">
-                    <video autoPlay muted loop playsInline className="w-full h-full object-cover" src="/videos/cook.mp4" />
+                    <VideoWithFallback
+                        src="/videos/cook.mp4"
+                        fallbackImage="/images/palm.jpg" // first frame of video as jpg
+                        priority={true} // This is above the fold
+                        className="opacity-50"
+                    />
                 </motion.div>
 
                 {/* --- Cinematic Dimmer --- */}
