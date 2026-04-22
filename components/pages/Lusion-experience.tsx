@@ -74,7 +74,7 @@ export default function LusionExperience() {
 
             {/* SECTION 1: HERO */}
             <section className="h-screen flex flex-col justify-center px-6 md:px-20 relative z-10">
-                <h1 className="text-[10vw] md:text-[8vw] font-medium leading-[0.9] tracking-tight text-white">
+                <h1 className="text-[15vw] md:text-[8vw] font-medium leading-[0.9] tracking-tight text-white">
                     Authentic Ghanaian <br /> Smoked Fish.
 
                 </h1>
@@ -82,14 +82,14 @@ export default function LusionExperience() {
 
             {/* SECTION 2: THE VIDEO EXPERIENCE */}
             <section className="relative min-h-screen px-6 md:px-20 py-20 z-20">
-                <div className="max-w-6xl mx-auto relative group">
+                <div className="max-w-6xl mx-auto relative h-[600px] md:h-auto group">
                     <div className="absolute -inset-4 border border-white/10 pointer-events-none z-30" />
                     <div className="absolute -top-4 -left-4 w-1.5 h-1.5 bg-white z-40" />
                     <div className="absolute -top-4 -right-4 w-1.5 h-1.5 bg-white z-40" />
                     <div className="absolute -bottom-4 -left-4 w-1.5 h-1.5 bg-white z-40" />
                     <div className="absolute -bottom-4 -right-4 w-1.5 h-1.5 bg-white z-40" />
 
-                    <div className="relative w-full aspect-video bg-zinc-900 rounded-sm overflow-hidden shadow-[0_0_100px_rgba(75,104,255,0.1)]">
+                    <div className="relative w-full h-full aspect-video bg-zinc-900 rounded-sm overflow-hidden shadow-[0_0_100px_rgba(75,104,255,0.1)]">
                         <video
                             src="/videos/smoke-fish.mp4"
                             autoPlay loop muted playsInline

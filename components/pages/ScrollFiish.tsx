@@ -72,7 +72,7 @@ export default function LusionSection() {
                         ref={svgPathRef}
                         d="M-50,200 C200,100 400,600 100,800 C-200,1000 800,900 1100,500"
                         fill="transparent"
-                        stroke="#3b82f6"
+                        stroke="#0000FF"
                         strokeWidth="16"
                         strokeLinecap="round"
                     />
@@ -104,7 +104,7 @@ export default function LusionSection() {
                     {/* The morphing origin point */}
                     <div
                         ref={videoContainerRef}
-                        className="w-100 h-100 bg-blue-200 rounded-3xl overflow-hidden shadow-md relative cursor-pointer group border-5"
+                        className="mx-auto w-100 h-100 bg-blue-200 rounded-3xl overflow-hidden shadow-md relative cursor-pointer group border-5"
                     >
                         <Image
                             src="/images/smokeFish.png"
@@ -122,20 +122,20 @@ export default function LusionSection() {
                 </div>
 
                 <div className="max-w-md space-y-6">
-                    <p className="reveal-text text-lg text-black font-medium">
+                    <p className="reveal-text text-xl text-black font-medium">
                         Ama Organics was born out of a simple need: the desire for food that is as honest as it is flavorful. In a world of additives and over-processing, we went back to the basics.
                     </p>
                 </div>
             </section>
 
             {/* SECTION 3: PLAY REEL (The Expanded State) */}
-            <section className="reel-section relative h-screen flex items-center justify-center z-20">
+            {/* <section className="reel-section relative h-screen flex items-center justify-center z-20 mx-auto">
 
                 <div className="relative w-full max-w-6xl min-h-[60vh] border rounded-2xl overflow-hidden">
-                    <video autoPlay muted loop playsInline className="absolute w-full h-full object-cover" src="/videos/cook.mp4" />
+                    <video autoPlay muted loop playsInline className="absolute w-full h-full object-cover" src="/videos/plants.mp4" />
                 </div>
 
-            </section>
+            </section> */}
         </div>
     );
 }

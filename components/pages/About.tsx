@@ -98,14 +98,14 @@ export default function About() {
                     ref={videoRef}
                     autoPlay loop muted playsInline
                     className="w-full h-full object-cover opacity-50"
-                    src="/videos/about-bg.mp4"
+                    src="/videos/three.mp4"
                 />
             </div>
 
             {/* Liquid Glass & Textures */}
             <div className="absolute inset-0 z-10 pointer-events-none">
                 <Image
-                    src="/images/liquid-glass.jpeg"
+                    src="/images/liquid-glas.jpeg"
                     className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-screen backdrop-blur-[80px]"
                     alt="glassy look"
                     width={100}
@@ -148,8 +148,8 @@ export default function About() {
                 <div className="text-[9px] font-bold tracking-[0.3em] text-white/30 uppercase">
                     Keep Scrolling
                 </div>
-                <div className="w-16 h-[1px] bg-white/10 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-[#4b68ff] animate-pulse" />
+                <div className="w-20 h-[2px] bg-white/10 relative overflow-hidden rounded-full">
+                    <div className="absolute inset-0 bg-white animate-pulse" />
                 </div>
             </div>
         </main>

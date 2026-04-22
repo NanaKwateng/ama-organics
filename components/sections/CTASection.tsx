@@ -38,7 +38,7 @@ const PixelGridWhite = () => {
 
 const CTASection: React.FC = () => {
     return (
-        <section className="bg-[#f8f9fa] py-20 px-4">
+        <section className="bg-[#f8f9fa] py-20 px-1 md:px-4">
             <div className="max-w-7xl mx-auto">
                 {/* Container mimicking the white business card */}
                 <div className="relative bg-white rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row items-stretch min-h-[480px] border border-gray-100">
@@ -68,7 +68,7 @@ const CTASection: React.FC = () => {
                             </div>
                         </div>
 
-                        <h2 className="text-5xl md:text-6xl font-black text-gray-900 tracking-[ -0.04em] leading-[1.05] mb-6">
+                        <h2 className="text-3xl md:text-6xl font-black text-gray-900 tracking-[ -0.04em] leading-[1.05] mb-6">
                             Ready to Experience <br />
                             <span className="text-orange-600">Pure Palm Oil?</span>
                         </h2>

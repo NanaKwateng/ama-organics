@@ -177,7 +177,7 @@ export default function ProductCard() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="mb-20 space-y-4">
-                    <h2 className="text-6xl md:text-8xl font-medium tracking-tighter text-white leading-none">
+                    <h2 className="text-4xl md:text-8xl font-medium tracking-tighter text-white leading-none">
                         Our Natural <br /> Categories.
                     </h2>
                     <p className="text-zinc-500 text-xl font-light max-w-lg">

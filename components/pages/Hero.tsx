@@ -76,7 +76,7 @@ export default function Hero() {
                 </div>
 
                 {/* LEFT CONTENT */}
-                <div className="absolute top-12 md:top-16 left-8 md:left-16 max-w-sm z-30 fade-out-scroll">
+                <div className="absolute top-20 md:top-16 left-8 md:left-16 max-w-sm z-30 fade-out-scroll">
                     <p className="fade-in-ui text-[10px] md:text-xs uppercase tracking-[0.3em] font-bold text-orange-800 mb-2">
                         Ama Organics • Pure Ghanaian Palm Oil
                     </p>
@@ -89,7 +89,7 @@ export default function Hero() {
                         ))}
                     </h2>
 
-                    <p className="fade-in-ui text-sm text-gray-600 leading-relaxed max-w-[280px]">
+                    <p className="fade-in-ui text-sm text-gray-400 leading-relaxed max-w-[280px] p-3 rounded-xl backdrop-blur-sm">
                         Sourced from carefully selected palm fruits across Ghana, our premium
                         palm oil is rich in natural nutrients, bold flavor, and deep color.
                     </p>

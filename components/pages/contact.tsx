@@ -6,6 +6,7 @@ import * as z from "zod";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Phone, Mail, MessageSquare, ArrowRight, Loader2 } from "lucide-react";
+import Image from "next/image";
 
 // 1. Zod Validation Schema
 const contactSchema = z.object({
@@ -18,7 +19,7 @@ type ContactFormValues = z.infer<typeof contactSchema>;
 
 const contactDetails = [
     { label: "Direct Call", value: "+233 24 123 4567", href: "tel:+233241234567", icon: Phone },
-    { label: "Official Email", value: "hi@lusion.studio", href: "mailto:hi@lusion.studio", icon: Mail },
+    { label: "Official Email", value: "Feli@amaorganics.com", href: "mailto:Feli@amaorganics.com", icon: Mail },
     { label: "WhatsApp", value: "Chat with Us", href: "https://wa.me/233241234567", icon: MessageSquare },
 ];
 
@@ -68,16 +69,18 @@ export default function Contact() {
                 {/* --- LEFT: DYNAMIC IMAGE SECTION --- */}
                 <div className="relative w-full lg:w-1/2 h-[50vh] lg:h-auto overflow-hidden bg-zinc-100">
                     <div className="image-container h-full w-full relative">
-                        <img
-                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+                        <Image
+                            src="/images/orange.jpeg"
                             alt="Studio Interior"
                             className="contact-image absolute inset-0 w-[110%] h-[110%] object-cover object-center scale-110"
+                            fill
+                            priority
                         />
                         {/* Architectural Overlay */}
                         <div className="absolute inset-0 bg-black/5 mix-blend-multiply" />
                         <div className="absolute bottom-12 left-12 text-white z-10 hidden lg:block">
                             <p className="text-[10px] uppercase tracking-[0.5em] font-bold opacity-60 mb-2">Location</p>
-                            <h4 className="text-xl font-medium">Studio Lusion, Accra</h4>
+                            <h4 className="text-xl font-medium">Accra - Ghana</h4>
                         </div>
                     </div>
                 </div>
@@ -90,7 +93,7 @@ export default function Contact() {
                             <h1 className="text-6xl md:text-8xl font-medium tracking-tighter leading-[0.85] text-black">
                                 Let's <br /> Connect.
                             </h1>
-                            <p className="text-zinc-400 text-lg font-light leading-relaxed">
+                            <p className="text-zinc-700 text-lg font-light leading-relaxed">
                                 Whether you have a specific project in mind or just want to say hi, our doors are always open.
                             </p>
                         </div>
