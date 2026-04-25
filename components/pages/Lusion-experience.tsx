@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { Play, ArrowUpRight, Plus } from "lucide-react";
+import { Play, ArrowUpRight, Plus, PlusIcon } from "lucide-react";
 import Link from "next/link";
 
 if (typeof window !== "undefined") {
@@ -74,8 +74,8 @@ export default function LusionExperience() {
 
             {/* SECTION 1: HERO */}
             <section className="h-screen flex flex-col justify-center px-6 md:px-20 relative z-10">
-                <h1 className="text-[15vw] md:text-[8vw] font-medium leading-[0.9] tracking-tight text-white">
-                    Authentic Ghanaian <br /> Smoked Fish.
+                <h1 className="text-[10vw] md:text-[5vw] font-medium leading-[0.9] tracking-tight text-white">
+                    Experience the <span className="text-orange-500">best</span>  of <br /> <span className="italic border-b">Smoked Fish.</span>
 
                 </h1>
             </section>
@@ -124,9 +124,15 @@ export default function LusionExperience() {
             <section className="relative min-h-screen px-6 md:px-20 py-40 z-10 bottom-trigger">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12">
                     <div className="md:col-start-6 md:col-span-6 space-y-8">
-                        <p className="bottom-reveal text-2xl md:text-4xl font-light leading-tight text-zinc-300">
-                            Traditionally cured over <span className="text-white font-medium">natural hardwoods</span> for that deep, smoky aroma and firm texture you love.   <span className="text-white font-medium">Clean, grit-free, and ready</span> for your favorite soups and other meals.
-                        </p>
+
+                        <div className="flex gap-4">
+                            <span className=" text-white">
+                                <PlusIcon size={24} color="white" className="animate-spin" />
+                            </span>
+                            <p className="bottom-reveal text-2xl md:text-4xl font-light leading-tight text-zinc-300">
+                                Traditionally cured over <span className="text-orange-300 font-medium">natural hardwoods</span> for that deep, smoky aroma and firm texture you love.   <span className="text-orange-300 font-medium">Clean, grit-free, and ready</span> for your favorite soups and other meals.
+                            </p>
+                        </div>
                         <div className="bottom-reveal pt-8">
                             <Link href={"/contact"}>
 

@@ -10,12 +10,18 @@ import ProductCard from "@/components/pages/ProductCard";
 import About from "@/components/pages/About";
 import Contact from "@/components/pages/contact";
 import AmaProductShowcase from "@/components/pages/Products";
+import CinematicHero from "@/components/pages/CinematicHero";
+import EditorialHero from "@/components/pages/EditorialHero";
+import StuntCards from "@/components/pages/StuntCards";
 
 
 export default function Home() {
   return (
     <div className="w-full">
-      <LandingPage />
+      {/* <LandingPage /> */}
+      <EditorialHero />
+      <CinematicHero />
+      <StuntCards />
       <PalmCarousel />
       <div className="bg-black">
         <h2 className="text-3xl md:text-5xl text-white p-8 max-w-2xl">
