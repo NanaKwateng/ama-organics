@@ -13,6 +13,7 @@ import AmaProductShowcase from "@/components/pages/Products";
 import CinematicHero from "@/components/pages/CinematicHero";
 import EditorialHero from "@/components/pages/EditorialHero";
 import StuntCards from "@/components/pages/StuntCards";
+import HexagonHero from "@/components/pages/HexagonHero";
 
 
 export default function Home() {
@@ -20,9 +21,9 @@ export default function Home() {
     <div className="w-full">
       {/* <LandingPage /> */}
       <EditorialHero />
-      <CinematicHero />
-      <StuntCards />
+      {/* <CinematicHero /> */}
       <PalmCarousel />
+      <StuntCards />
       <div className="bg-black">
         <h2 className="text-3xl md:text-5xl text-white p-8 max-w-2xl">
           Experience the pure, natural taste of palm oil,authentic flavor - 100% organic palm oil
@@ -31,8 +32,8 @@ export default function Home() {
       </div>
       <LusionExperience />
       <ProductCard />
-
-      <PalmScroll />
+      <HexagonHero />
+      {/* <PalmScroll /> */}
       <ZigzagMarquee />
     </div>
   );

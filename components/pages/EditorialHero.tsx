@@ -105,7 +105,7 @@ export default function EditorialHero() {
                                 data-x={translateX}
                                 data-z={translateZ}
                                 data-index={i}
-                                className="stack-card absolute w-[300px] md:w-[450px] aspect-[10/12] rounded-sm overflow-hidden border border-white/5 bg-[#0a0a0a] shadow-[0_50px_100px_rgba(0,0,0,0.8)] cursor-pointer transition-shadow hover:shadow-orange-500/10"
+                                className="stack-card absolute w-[300px] md:w-[450px] aspect-[10/12] rounded-sm overflow-hidden border border-white/5 bg-[#0a0a0a] shadow-[0_50px_100px_rgba(0,0,0,0.8)] cursor-pointer transition-shadow hover:shadow-orange-500/10 py-12"
                                 style={{
                                     transform: `translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px) rotateY(${rotateY}deg)`,
                                     zIndex: i,
