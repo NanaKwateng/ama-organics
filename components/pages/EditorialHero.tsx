@@ -79,9 +79,9 @@ export default function EditorialHero() {
             <nav className="absolute top-0 w-full z-[100] flex justify-between items-center px-4 py-8 md:p-8">
                 {/* <div className="text-xs tracking-tighter font-bold uppercase">Ama Organics®</div> */}
                 <div className="hero-text-block max-w-lg py-5">
-                    <p className="text-2xl uppercase text-gray-400 mb-2">Ama Organic Foods®</p>
-                    <h2 className="text-md md:text-2xl font-medium leading-tight">
-                        Sourced from carefully selected organic and natural foods, our premium foods are rich in natural nutrients and more..
+                    <p className="text-3xl lg:text-4xl font-bold uppercase text-gray-100 mb-4">Ama Organic Foods®</p>
+                    <h2 className="text-md md:text-2xl leading-tigh text-zinc-300">
+                        Sourced from carefully selected <span className="text-white font-bold">organic</span> and <span className="text-white font-bold">natural</span> foods, our <span className="text-white font-bold">premium</span> foods are rich in <span className="text-white font-bold">natural nutrients</span> and more..
                     </h2>
                 </div>
             </nav>
@@ -141,7 +141,7 @@ export default function EditorialHero() {
             </div>
 
             <article className="absolute bottom-0 w-full px-10 md:px-20 z-[100] flex justify-between items-end">
-                <div className="absolute bottom-0 md:bottom-10 left-5 md:left-10 text-[10px] font-bold tracking-tight uppercase origin-left -rotate-90">AMA ORGANIC FOODS</div>
+                <div className="absolute bottom-0 md:bottom-10 left-5 md:left-10 text-[10px] font-bold tracking-tight uppercase origin-left -rotate-90">Providing Quality...</div>
 
                 <div className="flex flex-col md:flex-row justify-between items-start gap-3 px-8">
                     <div className="max-w-[150px]">
@@ -151,8 +151,8 @@ export default function EditorialHero() {
                         <div className="h-[1px] w-full bg-black/10" />
                     </div>
                     <div className="">
-                        <span className="text-5xl font-semibold text-white">100%</span>
-                        <p className="text-[10px] font-thin uppercase tracking-widest">Organic, Purely Natural </p>
+                        <span className="text-5xl font-semibold text-yellow-500">100%</span>
+                        <p className="text-[15px] font-thin uppercase tracking-widest text-green-500">Organic, Purely Natural </p>
                     </div>
                 </div>
             </article>

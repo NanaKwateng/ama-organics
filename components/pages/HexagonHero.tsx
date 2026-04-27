@@ -74,7 +74,7 @@ export default function HexagonHeroV2() {
             <div className="reveal-text absolute z-0 flex flex-col items-center justify-center text-center w-full px-4 select-none">
                 <h1 className="text-4xl md:text-6xl font-[900] uppercase tracking-tighter leading-[0.8] text-black max-w-md">
                     One Stop<br />
-                    <span className="text-orange-600">Digital</span><br />
+                    <span className="text-orange-600">Organic</span><br />
                     Library.
                 </h1>
                 <p className="mt-6 text-[10px] md:text-xs font-bold uppercase tracking-[0.4em] text-gray-400 max-w-md">

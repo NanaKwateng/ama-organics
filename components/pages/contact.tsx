@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Phone, Mail, MessageSquare, ArrowRight, Loader2 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 // 1. Zod Validation Schema
 const contactSchema = z.object({
@@ -101,13 +102,13 @@ export default function Contact() {
                         {/* Quick Contact Grid */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 form-reveal">
                             {contactDetails.map((item, i) => (
-                                <a key={i} href={item.href} className="group border-b border-zinc-100 pb-6 transition-all hover:border-[#4b68ff]">
+                                <Link key={i} href={item.href} className="group border-b border-zinc-100 pb-6 transition-all hover:border-[#4b68ff]">
                                     <p className="text-[10px] uppercase tracking-widest font-bold text-zinc-400 mb-3 group-hover:text-[#4b68ff]">{item.label}</p>
                                     <div className="flex items-center justify-between">
                                         <span className="text-sm font-medium text-black">{item.value}</span>
                                         <item.icon size={14} className="text-[#4b68ff] opacity-0 group-hover:opacity-100 transition-opacity" />
                                     </div>
-                                </a>
+                                </Link>
                             ))}
                         </div>
 
@@ -117,7 +118,7 @@ export default function Contact() {
                                 <input
                                     {...register("name")}
                                     placeholder="Your Name"
-                                    className={`w-full text-xl bg-transparent border-b ${errors.name ? 'border-red-500' : 'border-zinc-200'} py-4 outline-none focus:border-[#4b68ff] transition-colors placeholder:text-zinc-300`}
+                                    className={`w-full text-xl bg-transparent border-b ${errors.name ? 'border-red-500' : 'border-zinc-200'} py-4 outline-none focus:border-[#4b68ff] transition-colors placeholder:text-zinc-800`}
                                 />
                                 {errors.name && <span className="text-[10px] text-red-500 uppercase font-bold mt-1 block">{errors.name.message}</span>}
                             </div>
@@ -126,7 +127,7 @@ export default function Contact() {
                                 <input
                                     {...register("email")}
                                     placeholder="Email Address"
-                                    className={`w-full text-xl bg-transparent border-b ${errors.email ? 'border-red-500' : 'border-zinc-200'} py-4 outline-none focus:border-[#4b68ff] transition-colors placeholder:text-zinc-300`}
+                                    className={`w-full text-xl bg-transparent border-b ${errors.email ? 'border-red-500' : 'border-zinc-200'} py-4 outline-none focus:border-[#4b68ff] transition-colors placeholder:text-zinc-800`}
                                 />
                                 {errors.email && <span className="text-[10px] text-red-500 uppercase font-bold mt-1 block">{errors.email.message}</span>}
                             </div>
@@ -134,9 +135,9 @@ export default function Contact() {
                             <div className="relative group">
                                 <textarea
                                     {...register("message")}
-                                    placeholder="What are we building together?"
+                                    placeholder="Your message"
                                     rows={4}
-                                    className={`w-full text-xl bg-transparent border-b ${errors.message ? 'border-red-500' : 'border-zinc-200'} py-4 outline-none resize-none focus:border-[#4b68ff] transition-colors placeholder:text-zinc-300`}
+                                    className={`w-full text-xl bg-transparent border-b ${errors.message ? 'border-red-500' : 'border-zinc-200'} py-4 outline-none resize-none focus:border-[#4b68ff] transition-colors placeholder:text-zinc-800`}
                                 />
                                 {errors.message && <span className="text-[10px] text-red-500 uppercase font-bold mt-1 block">{errors.message.message}</span>}
                             </div>
