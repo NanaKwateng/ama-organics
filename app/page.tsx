@@ -32,7 +32,9 @@ export default function Home() {
       </div>
       <LusionExperience />
       <ProductCard />
-      <HexagonHero />
+      <div className="hidden">
+        <HexagonHero />
+      </div>
       {/* <PalmScroll /> */}
       <ZigzagMarquee />
     </div>
