@@ -95,7 +95,7 @@ export default function Contact() {
                                 Let's <br /> Connect.
                             </h1>
                             <p className="text-zinc-700 text-lg font-light leading-relaxed">
-                                Whether you have a specific project in mind or just want to say hi, our doors are always open.
+                                Whether you have a specific order to make, bulk purchases or just want reach out, our doors are always open.
                             </p>
                         </div>
 
