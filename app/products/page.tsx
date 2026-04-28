@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Our Products | Ama Organics",
         description: "Browse organic Ghanaian staples. Farm to table.",
-        url: "https://www.amaorganics.com/products",
+        url: "https://www.ama-organics.com/products",
         images: [{ url: "/og-products.jpg" }],
     },
 };

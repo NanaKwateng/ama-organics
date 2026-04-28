@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description:
         "Learn about Ama Organics — our story, mission, and commitment to pure, organic Ghanaian food. Supporting local farmers since day one.",
     alternates: {
-        canonical: "https://www.amaorganics.com/about",
+        canonical: "https://www.ama-organics.com/about",
     },
 };
 

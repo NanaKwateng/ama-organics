@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description:
         "Get in touch with Ama Organics. Order pure Ghanaian palm oil, smoked fish, and organic produce. Call, email, or WhatsApp us today.",
     alternates: {
-        canonical: "https://www.amaorganics.com/contact",
+        canonical: "https://www.ama-organics.com/contact",
     },
 };
 
