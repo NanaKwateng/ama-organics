@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 // Update this every time you add a new page/route
-const BASE_URL = "https://www.amaorganics.com";
+const BASE_URL = "https://www.ama-organics.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
