@@ -24,7 +24,7 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: "/",
             },
         ],
-        sitemap: "https://www.amaorganics.com/sitemap.xml",
-        host: "https://www.amaorganics.com",
+        sitemap: "https://www.ama-organics.com/sitemap.xml",
+        host: "https://www.ama-organics.com",
     };
 }
