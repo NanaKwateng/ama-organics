@@ -14,13 +14,18 @@ import CinematicHero from "@/components/pages/CinematicHero";
 import EditorialHero from "@/components/pages/EditorialHero";
 import StuntCards from "@/components/pages/StuntCards";
 import HexagonHero from "@/components/pages/HexagonHero";
+import MainPage from "@/components/sections/MainPage";
+import { Onboarding } from "@/components/sections/Onboarding";
+import RootPage from "@/components/sections/RootPage";
 
 
 export default function Home() {
+
   return (
     <div className="w-full">
       {/* <LandingPage /> */}
-      <EditorialHero />
+      <RootPage />
+      {/* <EditorialHero /> */}
       {/* <CinematicHero /> */}
       <PalmCarousel />
       <StuntCards />

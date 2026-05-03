@@ -9,6 +9,7 @@ import {
     DropdownMenuShortcut,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { User } from "lucide-react"
 import Link from "next/link"
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi"
 
@@ -16,7 +17,7 @@ export function Dropdown() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="bg-white text-black px-5 py-2.5 rounded-full text-xs font-bold tracking-wide flex items-center gap-2">LET'S TALK <span className="w-1 h-1 bg-black rounded-full" /></Button>
+                <div className="bg-black text-white p-2.5 rounded-full"><User className="size-5 stroke-[2.5]" /></div>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
                 <DropdownMenuGroup>

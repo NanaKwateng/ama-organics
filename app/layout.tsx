@@ -7,6 +7,8 @@ import { Dropdown } from "@/components/sections/DropDown";
 import Footer from "@/components/sections/Footer";
 import { FaLeaf } from "react-icons/fa";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
+import Link from "next/link";
+import { RotatingLogo } from "@/components/sections/TiltCards";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -132,11 +134,26 @@ export default function RootLayout({
             smoothWheel: true,
           }}
         >
-          <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-3 mix-blend-difference">
-            <div className="text-xs">
-              <FaLeaf />
+          <nav className="flex items-center justify-between mb-12 px-6 md:px-12 py-3">
+            <div className="w-20"><RotatingLogo /></div>
+            <div className="hidden md:flex gap-10 font-bold text-sm tracking-tight">
+              {[
+                { name: "Home", href: "/" },
+                { name: "About", href: "/about" },
+                { name: "Shop", href: "/products" },
+                { name: "Contact us", href: "/contact" }
+              ].map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="hover:opacity-60 transition-opacity"
+                >
+                  {link.name}
+                </Link>
+              ))}
             </div>
-            <div className="flex items-center gap-3">
+
+            <div className="flex items-center gap-2">
               <Dropdown />
               <DrawerMenu />
             </div>

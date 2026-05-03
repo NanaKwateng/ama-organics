@@ -4,7 +4,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Button } from "@/components/ui/button";
-import { X, ArrowRight } from "lucide-react";
+import { X, ArrowRight, ShoppingBag } from "lucide-react";
 import {
     Drawer,
     DrawerClose,
@@ -45,9 +45,8 @@ export function DrawerMenu() {
     return (
         <Drawer direction="right">
             <DrawerTrigger asChild>
-                <Button variant="outline" className="bg-white text-black px-5 py-2.5 rounded-full text-xs font-bold tracking-wide flex items-center gap-2">
-                    MENU ••
-                </Button>
+                <div className="bg-black text-white p-2.5 rounded-full"><ShoppingBag className="size-5" /></div>
+
             </DrawerTrigger>
 
             <DrawerContent className="h-full w-full md:w-[500px] ml-auto rounded-none bg-white border-l border-zinc-100 outline-none">
