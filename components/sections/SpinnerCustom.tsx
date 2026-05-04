@@ -1,0 +1,22 @@
+// components/ui/spinner-custom.tsx
+import { LoaderIcon } from "lucide-react"
+import { cn } from "@/lib/utils"
+
+function Spinner({ className, ...props }: React.ComponentProps<"svg">) {
+    return (
+        <LoaderIcon
+            role="status"
+            aria-label="Loading"
+            className={cn("size-6 animate-spin text-black", className)}
+            {...props}
+        />
+    )
+}
+
+export function SpinnerCustom() {
+    return (
+        <div className="flex items-center justify-center gap-4">
+            <Spinner />
+        </div>
+    )
+}

@@ -19,9 +19,9 @@ const contactSchema = z.object({
 type ContactFormValues = z.infer<typeof contactSchema>;
 
 const contactDetails = [
-    { label: "Direct Call", value: "+233 24 123 4567", href: "tel:+233241234567", icon: Phone },
+    { label: "Direct Call", value: "+233 53 861 6763", href: "tel:+233538616763", icon: Phone },
     { label: "Official Email", value: "Feli@amaorganics.com", href: "mailto:Feli@amaorganics.com", icon: Mail },
-    { label: "WhatsApp", value: "Chat with Us", href: "https://wa.me/233241234567", icon: MessageSquare },
+    { label: "WhatsApp", value: "Chat with Us", href: "https://wa.me/233538616763", icon: MessageSquare },
 ];
 
 export default function Contact() {

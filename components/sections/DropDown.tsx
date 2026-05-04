@@ -16,7 +16,7 @@ import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi"
 export function Dropdown() {
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger>
                 <div className="bg-black text-white p-2.5 rounded-full"><User className="size-5 stroke-[2.5]" /></div>
             </DropdownMenuTrigger>
             <DropdownMenuContent>

@@ -24,7 +24,7 @@ export default function MainPage() {
                     <div className="md:col-span-3 pt-10">
                         <div className="mb-16">
                             <p className="text-[10px] font-black uppercase tracking-widest text-gray-600 mb-2">The Standard</p>
-                            <h3 className="text-xl font-black leading-none max-w-[150px]">Zero Chemicals, Total Vitality</h3>
+                            <h3 className="text-xl font-semibold leading-none max-w-[150px] fomt-mono">Zero Chemicals, Total Vitality</h3>
                         </div>
 
 
@@ -51,7 +51,7 @@ export default function MainPage() {
                     <div className="md:col-span-6 grid grid-cols-2 gap-4">
                         <div className="space-y-4 pt-12">
                             <TiltCard className="relative w-full aspect-square bg-[#e2d6c5] rounded-[40px] overflow-hidden">
-                                <Image src="/images/freshtomatoes.jpeg" alt="fresh tomatoes" className="w-full h-full object-cover"
+                                <Image src="/images/maize.jpeg" alt="maize" className="w-full h-full object-cover"
                                     fill
                                     priority
                                 />
@@ -71,8 +71,10 @@ export default function MainPage() {
                                 <Image src="/images/kernel.jpeg" alt="palm kernel" className="w-full h-full object-cover" fill priority />
                             </TiltCard>
                             <div className="mt-8 flex justify-center">
-                                <button className="flex items-center gap-2 border border-gray-200 px-6 py-2.5 rounded-full text-[10px] font-bold tracking-widest uppercase hover:bg-black hover:text-white transition-colors">
-                                    Scroll Down <ChevronDown className="size-3" />
+                                <button className="flex flex-col space-y-2 items-start gap-2 border border-gray-200 px-6 py-3.5 rounded-3xl text-[10px] font-thin font-serif uppercase bg-black text-white max-w-xs">
+                                    Scroll Down
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed animi
+                                    <span className="bg-white text-orange-600 rounded-xl px-2 py-3 w-full text-md">Explore Products</span>
                                 </button>
                             </div>
                         </div>
@@ -86,7 +88,7 @@ export default function MainPage() {
 
                         <div className="grid grid-cols-2 gap-4">
                             <TiltCard className="relative w-full aspect-square bg-[#3496ff] rounded-[30px] overflow-hidden">
-                                <Image src="/images/food.jpeg" alt="foodstuff" className="w-full h-full object-cover" fill priority />
+                                <Image src="/images/groundnuts.jpeg" alt="groundnuts" className="w-full h-full object-cover" fill priority />
                             </TiltCard>
                             <TiltCard className="relative w-full aspect-square bg-[#3496ff] rounded-[30px] overflow-hidden">
                                 <Image src="/images/cassava.jpeg" alt="foodstuff" className="w-full h-full object-cover" fill priority />
