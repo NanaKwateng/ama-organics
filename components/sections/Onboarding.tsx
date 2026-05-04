@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 const IMAGES = [
-    { src: "/images/orange.jpeg", name: "Orange", tag: "Fresh" },
+    { src: "/images/smokeFish.png", name: "Smoked Fish", tag: "Pure" },
     { src: "/images/ginger.jpeg", name: "Ginger", tag: "Organic" },
 ];
 
@@ -76,7 +76,7 @@ export function Onboarding({ onComplete }: { onComplete: () => void }) {
                 </div>
 
                 <h1 className="text-4xl font-black leading-[1.05] tracking-tight">
-                    Learn with crew, chase passions
+                    Choose quality, organic and healthy foods.
                 </h1>
 
                 <AnimatePresence mode="wait">
