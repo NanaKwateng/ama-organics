@@ -145,8 +145,8 @@ export default function Footer() {
                         Copyright © {currentYear} | Ama Organic Foods
                     </div>
                     <div className="flex gap-8">
-                        <span className="hover:text-black cursor-pointer transition-colors">Privacy Policy</span>
-                        <span className="hover:text-black cursor-pointer transition-colors">Terms of Service</span>
+                        <Link href="/privacy-policy" className="hover:text-black cursor-pointer transition-colors">Privacy Policy</Link>
+                        <Link href="/terms-of-service" className="hover:text-black cursor-pointer transition-colors">Terms of Service</Link>
                     </div>
                     <div className="footer-reveal flex items-center gap-2">
                         Ghana, West Africa <span className="w-1 h-1 bg-green-600 rounded-full animate-pulse" />

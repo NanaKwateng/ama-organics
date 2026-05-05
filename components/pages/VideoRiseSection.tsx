@@ -30,11 +30,20 @@ export default function VideoRiseSection() {
     return (
         <section ref={containerRef} className="relative h-[400vh] bg-black">
 
-            <div className="sticky top-0 h-screen w-full overflow-hidden">
+            <div className="relative sticky top-0 h-screen w-full overflow-hidden">
 
                 {/* --- Background Media --- */}
-                <motion.div style={{ opacity: videoOpacity }} className="absolute inset-0 z-0">
-                    <video autoPlay muted loop playsInline className="w-full h-full object-cover" src="/videos/cook.mp4" />
+                <motion.div style={{ opacity: videoOpacity }} className="absolute inset-0 z-0 w-full h-screen">
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        poster="/images/product.png"
+                        className="h-screen w-full rounded-2xl"
+                    >
+                        <source src="/videos/cook.mp4" type="video/mp4" />
+                    </video>
                 </motion.div>
 
                 {/* --- Cinematic Dimmer --- */}

@@ -1,52 +1,54 @@
+// app/page.tsx
 
-import LandingPage from "@/components/pages/LandingPage";
+import dynamic from "next/dynamic";
+import RootPage from "@/components/sections/RootPage";
 import PalmCarousel from "@/components/pages/PalmCarousel";
 import VideoRiseSection from "@/components/pages/VideoRiseSection";
 import ZigzagMarquee from "@/components/pages/ZigzagMarquee";
-import PalmScroll from "@/components/pages/PalmScroll";
-import LusionSection from "@/components/pages/ScrollFiish";
-import LusionExperience from "@/components/pages/Lusion-experience";
 import ProductCard from "@/components/pages/ProductCard";
-import About from "@/components/pages/About";
-import Contact from "@/components/pages/contact";
-import AmaProductShowcase from "@/components/pages/Products";
-import CinematicHero from "@/components/pages/CinematicHero";
-import EditorialHero from "@/components/pages/EditorialHero";
 import StuntCards from "@/components/pages/StuntCards";
-import HexagonHero from "@/components/pages/HexagonHero";
-import MainPage from "@/components/sections/MainPage";
-import { Onboarding } from "@/components/sections/Onboarding";
-import RootPage from "@/components/sections/RootPage";
+import Experience from "@/components/pages/Experience";
+
+// Lazy load heavy animation section
 
 
-export default function Home() {
-
+export default function Page() {
   return (
-    <div className="w-full">
-      {/* <LandingPage /> */}
+    <main className="w-full">
+
+      {/* ✅ STRUCTURED DATA (MUST be inside component) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Ama Organics",
+            url: "https://ama-organics.com",
+            logo: "https://ama-organics.com/logo.png",
+          }),
+        }}
+      />
+
+      {/* ✅ H1 (CRITICAL FOR SEO) */}
+      <h1 className="sr-only">
+        Buy Organic Food in Ghana – Palm Oil, Smoked Fish, Grains | Ama Organics
+      </h1>
+
       <RootPage />
-      {/* <EditorialHero /> */}
-      {/* <CinematicHero /> */}
       <PalmCarousel />
       <StuntCards />
-      <div className="bg-black">
+
+      <section className="bg-black">
         <h2 className="text-3xl md:text-5xl text-white p-8 max-w-2xl">
-          Experience the pure, natural taste of palm oil,authentic flavor - 100% organic palm oil
+          Experience pure, natural palm oil — authentic flavor, 100% organic.
         </h2>
         <VideoRiseSection />
-      </div>
-      <LusionExperience />
+      </section>
+      <Experience />
       <ProductCard />
-      <div className="hidden">
-        <HexagonHero />
-      </div>
-      {/* <PalmScroll /> */}
       <ZigzagMarquee />
-    </div>
+
+    </main>
   );
 }
-
-
-
-
-

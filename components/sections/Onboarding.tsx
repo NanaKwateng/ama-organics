@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { LoaderIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const IMAGES = [
     { src: "/images/smokeFish.png", name: "Smoked Fish", tag: "Pure" },
@@ -90,11 +91,11 @@ export function Onboarding({ onComplete }: { onComplete: () => void }) {
                                 onClick={onComplete}
                                 className="w-full rounded-2xl py-8 text-xl font-black bg-white text-black border-4 border-black hover:bg-black hover:text-white transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-1 mb-6"
                             >
-                                Get me in
+                                Continue
                             </Button>
                             <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest leading-loose">
                                 By tapping "Get me in" you're accepting the <br />
-                                <span className="text-black underline cursor-pointer">Terms of Use</span> and <span className="text-black underline cursor-pointer">Privacy Policy</span>
+                                <Link href="/terms-of-service" className="text-black underline cursor-pointer">Terms of Use</Link> and <Link href="/privacy-policy" className="text-black underline cursor-pointer">Privacy Policy</Link>
                             </p>
                         </motion.div>
                     )}

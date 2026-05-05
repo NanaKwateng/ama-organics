@@ -16,7 +16,7 @@ const sora = Sora({
   display: "swap", // ← Prevents font flash & improves CLS score
 });
 
-const BASE_URL = "https://www.amaorganics.com";
+const BASE_URL = "https://www.ama-organics.com";
 
 // ✅ Viewport export (Next.js 14+ separates this from metadata)
 export const viewport: Viewport = {
@@ -76,11 +76,11 @@ export const metadata: Metadata = {
       "100% organic, cold-pressed palm oil and fresh Ghanaian produce. No additives. No chemicals. Delivered nationwide.",
     images: [
       {
-        url: "/og-image.jpg", // ← create this: 1200x630px image
+        url: "/images/product.png", // ← create this: 1200x630px image
         width: 1200,
         height: 630,
         alt: "Ama Organics - Pure Ghanaian Palm Oil",
-        type: "image/jpeg",
+        type: "image/png",
       },
     ],
   },
@@ -114,7 +114,7 @@ export const metadata: Metadata = {
 
   // --- Verification (add after verifying in Google Search Console) ---
   verification: {
-    google: "your-google-verification-code", // from Search Console
+    google: "google62dbb39b71ae4601.html", // from Search Console
   },
 };
 

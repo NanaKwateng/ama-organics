@@ -12,17 +12,17 @@ export default function robots(): MetadataRoute.Robots {
                     "/admin/",
                 ],
             },
-            {
-                // Block AI scrapers
-                userAgent: [
-                    "GPTBot",
-                    "ChatGPT-User",
-                    "CCBot",
-                    "anthropic-ai",
-                    "Claude-Web",
-                ],
-                disallow: "/",
-            },
+            // {
+            //     // Block AI scrapers
+            //     userAgent: [
+            //         "GPTBot",
+            //         "ChatGPT-User",
+            //         "CCBot",
+            //         "anthropic-ai",
+            //         "Claude-Web",
+            //     ],
+            //     disallow: "/",
+            // },
         ],
         sitemap: "https://www.ama-organics.com/sitemap.xml",
         host: "https://www.ama-organics.com",
