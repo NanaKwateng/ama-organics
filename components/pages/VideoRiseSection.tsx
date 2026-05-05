@@ -56,7 +56,7 @@ export default function VideoRiseSection() {
                     <div className="absolute bottom-4 left-4 w-1.5 h-1.5 bg-white z-40" />
                     <div className="absolute bottom-4 right-4 w-1.5 h-1.5 bg-white z-40" />
 
-                    <div className="relative w-full aspect-video bg-zinc-900 rounded-sm overflow-hidden shadow-[0_0_100px_rgba(75,104,255,0.1)]">
+                    <div className="relative w-full aspect-3/4 lg:aspect-video bg-zinc-900 rounded-sm overflow-hidden shadow-[0_0_100px_rgba(75,104,255,0.1)]">
                         <video
                             src="/videos/cook.mp4"
                             autoPlay
