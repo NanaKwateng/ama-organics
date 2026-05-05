@@ -41,6 +41,8 @@ const PRODUCTS: Product[] = [
     { id: 21, name: "Palm Kernel Oil", category: "Oils", description: "Enjoy the rich taste of organic, fresh palm kernel oil, with its nutritional benefits", image: "/images/kernel.jpeg", badgeType: "pure" },
     { id: 22, name: "Natural Spices", category: "Nuts & Spices", description: "All rich nutrient-first organic, dried natural spices curated for your recipie spicing.. ", image: "/images/spices.jpeg", badgeType: "premium" },
     { id: 23, name: "Fresh Farm Cassava", category: "tubers", description: "Fresh and organic cassava, get them fresh and dried, available in stock", image: "/images/cassava.jpeg", badgeType: "pure" },
+    { id: 24, name: "Beans", category: "Cereals & Grains", description: "Pure beans, good for all beans recipies.", image: "/images/beans.jpeg", badgeType: "pure" },
+    { id: 25, name: "Gari", category: "Cereals & Grains", description: "Sourced from pure and organic cassava plants, purely natural", image: "/images/gari.jpeg", badgeType: "pure" },
 ];
 
 
