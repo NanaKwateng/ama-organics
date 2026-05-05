@@ -3,8 +3,7 @@ import { RotatingLogo, TiltCard } from "@/components/sections/TiltCards";
 import { Search, User, ShoppingBag, ArrowRight, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Dropdown } from "./DropDown";
-import { DrawerMenu } from "./Drawer";
+
 
 export default function MainPage() {
     return (
@@ -70,12 +69,17 @@ export default function MainPage() {
                             <TiltCard className="relative w-full aspect-[2/3] bg-[#ffd95b] rounded-full overflow-hidden border-[12px] border-white shadow-sm">
                                 <Image src="/images/kernel.jpeg" alt="palm kernel" className="w-full h-full object-cover" fill priority />
                             </TiltCard>
-                            <div className="mt-8 flex justify-center">
-                                <button className="flex flex-col space-y-2 items-start gap-2 border border-gray-200 px-6 py-3.5 rounded-3xl text-[10px] font-thin font-serif uppercase bg-black text-white max-w-xs">
-                                    Scroll Down
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed animi
-                                    <span className="bg-white text-orange-600 rounded-xl px-2 py-3 w-full text-md">Explore Products</span>
-                                </button>
+                            <div className="mt-8 flex justify-center items-center ">
+                                <div className="flex flex-col space-y-2 items-center justify-center gap-2 border border-gray-200 px-6 py-5 rounded-3xl text-[10px] font-thin font-serif uppercase bg-black text-white max-w-xs">
+
+                                    <span>
+                                        We bring the farm, the coast, and the forest directly to your kitchen.
+                                    </span>
+                                    <Link href="/products" className="w-full relative">
+
+                                        <span className="bg-white text-orange-600 rounded-xl px-2 py-3 w-full text-md">Explore Products</span>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>

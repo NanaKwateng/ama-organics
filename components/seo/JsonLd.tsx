@@ -6,8 +6,8 @@ export function OrganizationJsonLd() {
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "Ama Organics",
-        url: "https://www.amaorganics.com",
-        logo: "https://www.amaorganics.com/images/logo.png",
+        url: "https://www.ama-organics.com",
+        logo: "https://www.ama-organics.com/images/logo.png",
         description:
             "Pure, organic Ghanaian palm oil and farm-fresh produce delivered nationwide.",
         address: {
@@ -22,8 +22,8 @@ export function OrganizationJsonLd() {
             availableLanguage: "English",
         },
         sameAs: [
-            "https://instagram.com/amaorganics",
-            "https://twitter.com/amaorganics",
+            "https://instagram.com/ama-organics",
+            "https://twitter.com/ama-organics",
         ],
     };
 
@@ -40,7 +40,7 @@ export function ProductJsonLd() {
         "@context": "https://schema.org",
         "@type": "Product",
         name: "Pure Ghanaian Palm Oil",
-        image: "https://www.amaorganics.com/images/product.png",
+        image: "https://www.ama-organics.com/images/product.png",
         description:
             "100% cold-pressed, organic Ghanaian palm oil. No additives or preservatives.",
         brand: {
