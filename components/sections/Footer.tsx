@@ -10,6 +10,13 @@ export default function Footer() {
     const footerRef = useRef<HTMLElement>(null);
     const bigTextRef = useRef<HTMLHeadingElement>(null);
 
+    const phone = "233538616763"; // your phone number
+    const message = encodeURIComponent(
+        "Hello Ama Organics, I would like to order your premium palm oil."
+    );
+
+    const link = `https://wa.me/${phone}?text=${message}`;
+
     // Dynamic Year Function
     const currentYear = new Date().getFullYear();
 
@@ -107,10 +114,10 @@ export default function Footer() {
 
                             {/* WhatsApp Connection */}
                             <Link
-                                href="https://wa.me"
+                                href={link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="footer-reveal flex items-center gap-2 group cursor-pointer"
+                                aria-label="Order via WhatsApp" className="footer-reveal flex items-center gap-2 group cursor-pointer"
                             >
                                 <FaWhatsapp size={18} className="text-zinc-400 group-hover:text-green-600 transition-colors" />
                                 <span className="group-hover:text-black transition-colors text-sm">Chat on WhatsApp</span>

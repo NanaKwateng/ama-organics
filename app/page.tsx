@@ -8,6 +8,7 @@ import ZigzagMarquee from "@/components/pages/ZigzagMarquee";
 import ProductCard from "@/components/pages/ProductCard";
 import StuntCards from "@/components/pages/StuntCards";
 import Experience from "@/components/pages/Experience";
+import WhatsAppButton from "@/components/sections/WhatsAppButton";
 
 // Lazy load heavy animation section
 
@@ -48,7 +49,7 @@ export default function Page() {
       <Experience />
       <ProductCard />
       <ZigzagMarquee />
-
+      <WhatsAppButton />
     </main>
   );
 }

@@ -19,29 +19,52 @@ interface Product {
 
 const PRODUCTS: Product[] = [
     { id: 1, name: "Pure Ghanaian Palm Oil", category: "Oils", description: "Rich, cold-pressed oil sourced from premium palm fruits across Ghana. Nutrient-dense and 100% natural.", image: "/images/product.png", badgeType: "pure" },
+
     { id: 2, name: "Premium Local Rice", category: "Cereals & Grains", description: "Aromatic, long-grain local rice. Stone-free and perfectly parboiled for an authentic Ghanaian taste.", image: "/images/rice.jpeg", badgeType: "premium" },
+
     { id: 3, name: "Original Groundnut Paste", category: "Nuts & Spices", description: "Smooth, slow-roasted peanut butter with no added oils or preservatives. Pure protein in a jar.", image: "/images/groundnut.jpeg", badgeType: "organic" },
+
     { id: 4, name: "Hardwood Smoked Fish", category: "Proteins", description: "Traditionally smoked over natural hardwoods for a deep aroma. Grit-free and perfect for soups and stews.", image: "/images/smokeFish.png", badgeType: "fresh" },
+
     { id: 5, name: "Aidan Fruit (Prekese)", category: "Nuts & Spices", description: "A medicinal powerhouse rich in Vitamins A & B. Adds a distinct, healthy aroma to local soups.", image: "/images/prekese.jpeg", badgeType: "organic" },
+
     { id: 6, name: "Maize", category: "Cereals & Grains", description: "Sun-dried, high-quality white maize. Ideal for milling into flour or preparing diverse traditional dishes.", image: "/images/maize.jpeg", badgeType: "pure" },
+
     { id: 7, name: "Premium Dried Shrimps", category: "Proteins", description: "A lean source of protein and iodine. Carefully dried to preserve flavor and nutritional value.", image: "/images/shrimps.jpeg", badgeType: "fresh" },
+
     { id: 8, name: "Organic Soursop", category: "Fruits & Veggies", description: "Vitamin C-rich tropical fruit known for its immune-boosting properties and creamy texture.", image: "/images/soursop.jpeg", badgeType: "fresh" },
-    { id: 9, name: "Farm-Fresh Tomatoes", category: "Fruits & Veggies", description: "Vibrant, vine-ripened tomatoes sourced daily from local farms for maximum freshness.", image: "/images/tomatoes.jpeg", badgeType: "fresh" },
+
+    // { id: 9, name: "Farm-Fresh Tomatoes", category: "Fruits & Veggies", description: "Vibrant, vine-ripened tomatoes sourced daily from local farms for maximum freshness.", image: "/images/tomatoes.jpeg", badgeType: "fresh" },
+
     { id: 10, name: "Livestock - Healthy Goats", category: "Proteins", description: "Farm-raised, healthy goats processed under strict hygienic conditions. Ready for any occasion.", image: "/images/goat.jpeg", badgeType: "fresh" },
+
     { id: 11, name: "Sun-Dried Pepper", category: "Fruits & Veggies", description: "Intensely flavored dried peppers. Perfect for long-term storage and adding a kick to your recipes.", image: "/images/peper-dry.jpeg", badgeType: "premium" },
+
     { id: 12, name: "Corn Dough", category: "Cereals & Grains", description: "Traditional fermented dough, expertly prepared for the perfect Banku, Kenkey, or porridge.", image: "/images/dough.jpeg", badgeType: "pure" },
-    { id: 13, name: "Sweet Organic Mangoes", category: "Fruits & Veggies", description: "Fiber-rich, juicy mangoes harvested at peak ripeness. A sweet, natural treat for the family.", image: "/images/mangoes.jpeg", badgeType: "pure" },
-    { id: 14, name: "Fresh Garden Oranges", category: "Fruits & Veggies", description: "Bursting with juice and Vitamin C. Organic oranges delivered fresh from the orchard.", image: "/images/orange.jpeg", badgeType: "pure" },
+
+    // { id: 13, name: "Sweet Organic Mangoes", category: "Fruits & Veggies", description: "Fiber-rich, juicy mangoes harvested at peak ripeness. A sweet, natural treat for the family.", image: "/images/mangoes.jpeg", badgeType: "pure" },
+
+    // { id: 14, name: "Fresh Garden Oranges", category: "Fruits & Veggies", description: "Bursting with juice and Vitamin C. Organic oranges delivered fresh from the orchard.", image: "/images/orange.jpeg", badgeType: "pure" },
+
     { id: 15, name: "Traditional Earthenware", category: "items", description: "Authentic 'Asanka' for grinding spices. Retains the natural nutrients and flavors of your ingredients.", image: "/images/earthenware.jpeg", badgeType: "premium" },
+
     { id: 16, name: "Dried Cassava (Kokonte)", category: "tubers", description: "High-quality dried cassava chips. Perfect for milling into smooth, delicious 'Face the Wall'.", image: "/images/dry-cassava.jpeg", badgeType: "pure" },
+
     { id: 17, name: "Fresh Green & Ripe Plantains", category: "All", description: "Versatile organic plantains. Excellent for chips, fufu, or roasting. Available ripe or unripe.", image: "/images/plantain.jpeg", badgeType: "fresh" },
-    { id: 18, name: "Sweet Sugar Pineapples", category: "Fruits & Veggies", description: "Ultra-sweet, juicy Ghanaian pineapples. Perfect for fresh juices and healthy salads.", image: "/images/pineapple.jpeg", badgeType: "fresh" },
+
+    // { id: 18, name: "Sweet Sugar Pineapples", category: "Fruits & Veggies", description: "Ultra-sweet, juicy Ghanaian pineapples. Perfect for fresh juices and healthy salads.", image: "/images/pineapple.jpeg", badgeType: "fresh" },
+
     { id: 19, name: "Raw Peanuts (Groundnuts)", category: "Nuts & Spices", description: "Hand-selected raw groundnuts. A crunchy, nutritional blend for snacking or cooking.", image: "/images/groundnuts.jpeg", badgeType: "fresh" },
+
     { id: 20, name: "Ginger", category: "Nuts & Spices", description: "Hand-selected raw gingers. A crunchy, nutritional blend for snacking or cooking.", image: "/images/ginger.jpeg", badgeType: "fresh" },
     { id: 21, name: "Palm Kernel Oil", category: "Oils", description: "Enjoy the rich taste of organic, fresh palm kernel oil, with its nutritional benefits", image: "/images/kernel.jpeg", badgeType: "pure" },
+
     { id: 22, name: "Natural Spices", category: "Nuts & Spices", description: "All rich nutrient-first organic, dried natural spices curated for your recipie spicing.. ", image: "/images/spices.jpeg", badgeType: "premium" },
+
     { id: 23, name: "Fresh Farm Cassava", category: "tubers", description: "Fresh and organic cassava, get them fresh and dried, available in stock", image: "/images/cassava.jpeg", badgeType: "pure" },
+
     { id: 24, name: "Beans", category: "Cereals & Grains", description: "Pure beans, good for all beans recipies.", image: "/images/beans.jpeg", badgeType: "pure" },
+
     { id: 25, name: "Gari", category: "Cereals & Grains", description: "Sourced from pure and organic cassava plants, purely natural", image: "/images/gari.jpeg", badgeType: "pure" },
 ];
 
